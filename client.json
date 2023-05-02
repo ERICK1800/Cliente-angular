@@ -1,0 +1,7 @@
+{
+  "clients" : [
+      { "id" : 1, "name" : "Matador de Onça", "email" : "matadordeonca@gmail.com" },
+      { "id" : 1, "name" : "Zé do Peneu ", "email" : "zedopeneu@gmail.com" },
+      { "id" : 1, "name" : "Bora Toma Uma", "email" : "boratomauma@gmail.com" }
+  ]
+}

@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">NAME</th>
+            <th scope="col">EMAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <th scope="row">{{client.id}}</th>
+            <th>{{client.name}}</th>
+            <th>{{client.email}}</th>
+        </tr>
+    </tbody>
+</table>
