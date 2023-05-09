@@ -8,10 +8,15 @@ import { Client } from './cliente';
 })
 export class ClienteService {
 
+  url = "http://localhost:3000/clients";
+
   constructor(private http: HttpClient) { }
 
   getClient(): Observable<Client[]>{
-    let url = "http://localhost:3000/clients";
-    return this.http.get<Client[]>(url);
+    return this.http.get<Client[]>(this.url);
+  }
+
+  save(cliente: Client): Observable<Client>{
+    return this.http.post<Client>(this.url, cliente);
   }
 }

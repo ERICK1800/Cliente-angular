@@ -1,16 +1,45 @@
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">NAME</th>
-            <th scope="col">EMAIL</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let client of clients">
-            <th scope="row">{{client.id}}</th>
-            <th>{{client.name}}</th>
-            <th>{{client.email}}</th>
-        </tr>
-    </tbody>
-</table>
+<div class="row pe-3 ps-3">
+    <div class="col mt-5 m-auto">
+        <form [formGroup]="formGroupClient">
+            <div class="row mb-3">
+                <div class="col-1">
+                    <label for="name" class="form-label">Nome: </label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="name" placeholder="None" formControlName="name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-1">
+                    <label for="email" class="form-label text-start">Email</label>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+                </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-end">
+                <button class="btn btn-outline-dark" (click)="save()">SALVAR</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row pe-3 ps-3 mb-5">
+    <div class="col m-auto">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">EMAIL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let client of clients">
+                    <th scope="row">{{client.id}}</th>
+                    <th>{{client.name}}</th>
+                    <th>{{client.email}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

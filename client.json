@@ -1,7 +1,29 @@
 {
-  "clients" : [
-      { "id" : 1, "name" : "Matador de Onça", "email" : "matadordeonca@gmail.com" },
-      { "id" : 1, "name" : "Zé do Peneu ", "email" : "zedopeneu@gmail.com" },
-      { "id" : 1, "name" : "Bora Toma Uma", "email" : "boratomauma@gmail.com" }
+  "clients": [
+    {
+      "id": 1,
+      "name": "Matador de Onça",
+      "email": "matadordeonca@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Zé do Peneu ",
+      "email": "zedopeneu@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Bora Toma Uma",
+      "email": "boratomauma@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Zé Pequeno",
+      "email": "zepequeno@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Raluca",
+      "email": "raluca@gmail.com"
+    }
   ]
 }
