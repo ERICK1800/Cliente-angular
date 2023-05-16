@@ -19,4 +19,12 @@ export class ClienteService {
   save(cliente: Client): Observable<Client>{
     return this.http.post<Client>(this.url, cliente);
   }
+
+  remove(cliente: Client): Observable<void>{
+    return this.http.delete<void>(this.url + "/" + cliente.id);
+  }
+
+  update(cliente: Client): Observable<Client>{
+    return this.http.put<Client>(this.url + "/" + cliente.id, cliente);
+  }
 }

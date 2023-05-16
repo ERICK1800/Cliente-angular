@@ -24,6 +24,16 @@
       "id": 5,
       "name": "Raluca",
       "email": "raluca@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Diggo",
+      "email": "esperavamais@raluca.kkk"
+    },
+    {
+      "id": 7,
+      "name": "KKK",
+      "email": "kkk@gmail.com"
     }
   ]
 }
